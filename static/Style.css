@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(221, 224, 224);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.p1{
+    color: aqua;
+    position: absolute;
+    width: 25%;
+    right: 5%;
+    left:38% ;
+}
+
+section {
+    height: 40%;
+    width: 90%;
+    color: rgb(230, 143, 143);
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    left: 5%;
+    transform: translate(-50, -50);
+    text-align: center;
+    
+}
+
+.btn {
+    background-color: yellowgreen;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(234, 158, 158);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.BOX {
+    width: 100%;
+    height: 60%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    left: 5%;
+    text-align: center;
+
+}
+
+form {
+    border: 1px;
+    background-color: rgba(104, 147, 183, 0.216);
+    justify-items: center;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    height: 360px;
+    width: 50%;
+    position: absolute;
+    right: 25%;
+    left: 20%;
+    background-color: rgb(79, 118, 158);
+    text-align: center;
+    box-shadow: #8794af 25px 10px 10px 5px;
+
+}
+
+div {
+    justify-content: center;
+}
+
+.select1 {
+    width: 300px;
+    font-stretch: normal;
+    display: inline-block;
+    margin: 7px;
+}
+
+.select2 {
+    border-spacing: 200px;
+    width: 300px;
+    font-stretch: normal;
+    display: inline-block;
+}
+
+.btn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(235, 182, 182);
+    background-color: #e19b97;
+    border: 1px solid rgb(232, 176, 176);
+    margin: 5.5px;
+    padding: 10px 50px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    border: 1px solid #f44336;
+    background: #df8079;
+    transition: 1s;
+}
+    

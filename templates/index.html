@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/Style.css">
+    <title>Cars</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/images/car-867231.jpg" class="" alt="..." height="800px" ; width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/images/antique-car-4208486.jpg" class="d-block w-100" alt="..." height="800px;"
+                        width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/images/race-car-4420454.jpg" class="d-block w-100" alt="..." height="800px"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <section>
+            <p class="p1" style="color: rgb(241, 253, 253); font-size: large; background-color: black;background-size: 100px;">SELL YOUR CAR AT BEST PRICE</p>
+            <p style="font-size:250%;color: rgb(7, 69, 69);position: absolute; top: 20%;left: 37%;"><b>MOST-RELIABLE</b><br><b>PRICE</b></p>
+            <!-- <p  >PREDICTOR</p> -->
+            <!-- <button type="submit" class="btn" >PREDICT PRICE</button> -->
+        </section>
+        <div class="BOX">
+            <form action="\predict" method="POST">
+                <h3>PREDICT YOUR CAR PRICE</h3>
+
+                <div class="">
+                    <div class="option1"><input class="select1" type="text" placeholder="Present_Price"
+                            name="Present_Price" id="Present_Price" required="required">
+                        <select class="select1" aria-label="" name="Seller_Type" id="Seller_Type" required="required">
+                            <option selected>Seller_Type</option>
+                            <option value="Dealer">Dealer</option>
+                            <option value="Individual">Individual</option>
+                        </select>
+                    </div>
+
+                   
+                    <input class="select1" type="text" placeholder="Model Year" name="Year" id="Year"
+                        required="required">
+
+                    <select class="select1" aria-label="" width="360px" name="Owner" id="Owner" required="required">
+
+                        <option selected>Owner</option>
+                        <option value="1">0</option>
+                        <option value="2">1</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="option2">
+                    <input class="select1" type="text" placeholder="Kms_Driven" name="Kms_Driven" id="Kms_Driven"
+                        required="required">
+
+                    <select class="select1" aria-label="" name="Transmission_Mannual" id="Transmission_Mannual"
+                        required="required">
+                        <option selected>Select Transmission</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Automatic">Automatic</option>
+                    </select>
+                    <select class="select1" aria-label="" name="Fuel_Type_Petrol" id="Fuel_Type_Petrol" required="required">
+                        <option selected>Fuel Type</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="CNG">CNG</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Submit" class="btn2">
+        </div>
+        </form><h3>{{ prediction_text }}</h3>
+        <div></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
